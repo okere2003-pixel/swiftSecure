@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | SwiftSecure</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="auth-body">
+
+    <div class="auth-header">
+    <a href="index.html" class="brand-logo">SwiftSecure</a>
+    </div>
+
+  <div class="auth-card">
+    
+    <h2>Login</h2>
+
+    <form>
+      <input type="email" placeholder="Email" required />
+
+      <div class="password-field">
+        <input type="password" id="loginPassword" placeholder="Password" required />
+        <span class="toggle" onclick="togglePassword('loginPassword')">Show</span>
+      </div>
+
+      <div class="auth-options">
+        <label>
+          <input type="checkbox" /> Remember me
+        </label>
+        <a href="reset.html">Forgot Password?</a>
+      </div>
+
+      <button type="submit">Login</button>
+
+      <p class="auth-link">
+        Don’t have an account? <a href="signup.html">Create one</a>
+      </p>
+    </form>
+  </div>
+
+  <script>
+    function togglePassword(id) {
+      const input = document.getElementById(id);
+      input.type = input.type === "password" ? "text" : "password";
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: beige;
+    color: #111;
+    line-height: 1.6;
+}
+
+.box {
+    text-align: center;
+    padding: 140px 20px;
+    color: white;
+
+    background-image: url("/images/blue_chromatic_stream_4k-3840x2160.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.box h1 {
+    font-size: 89px;
+    letter-spacing: 2px;
+    text-shadow: 10px 10px 9px rgba(0, 0, 0, 0.4);
+    
+}
+
+.tagline {
+    margin-top: 10px;
+    font-size: 22px;
+    opacity: 0.8;
+}
+
+
+.cta-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: #fff;
+    padding: 12px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #ffffff;
+    padding: 12px 26px;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background: #1e4ed8;
+}
+
+.btn-secondary:hover {
+    background: #2563eb;
+    color: #fff;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background:#2563eb;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: center;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #2563eb;
+}
+
+button {
+    padding: 15px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #333;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    padding: 12px 15px;
+    font-size: 22px;
+    border-radius: 8px;
+    border: none;
+    background: #111;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+.auth-body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("/images/9470395_4141674.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.auth-header {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+.brand-logo {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background:#3c3c3d ;
+  padding: 10px 16px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  backdrop-filter: blur(6px);
+}
+
+.brand-logo:hover {
+  background: #2563eb;
+}
+
+
+.auth-card {
+  background: #fff;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.auth-card h2 {
+  margin-bottom: 25px;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  width: 100%;
+}
+
+.toggle {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #2563eb;
+  cursor: pointer;
+}
+
+.auth-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.auth-options a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.auth-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.auth-link a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.success {
+  color: green;
+  margin-top: 15px;
+  font-size: 14px;
+}
+

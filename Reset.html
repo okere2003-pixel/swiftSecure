@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reset Password | SwiftSecure</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="auth-body">
+
+    <div class="auth-header">
+    <a href="index.html" class="brand-logo">SwiftSecure</a>
+    </div>
+
+
+
+  <div class="auth-card">
+
+    <h2>Reset Password</h2>
+
+    <form onsubmit="showSuccess(event)">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Send Reset Link</button>
+    </form>
+
+    <p id="successMsg" class="success" style="display: none;">
+      Password reset link sent!
+    </p>
+
+    <p class="auth-link">
+      Back to <a href="login.html">Login</a>
+    </p>
+  </div>
+
+  <script>
+    function showSuccess(e) {
+      e.preventDefault();
+      document.getElementById("successMsg").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
